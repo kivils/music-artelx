@@ -1,6 +1,9 @@
 baseurl = "/"
 languageCode = "en-us"
 title = "My new Victor-Hugo site"
+[taxonomies]
+    tag = "tags"
+    category = "categories"
 
 # RSS, categories and tags disabled for an easy start
 # See configuration options for more details: 
