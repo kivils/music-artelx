@@ -1,14 +1,12 @@
 <h2 class="f3 b lh-title mb1 primary">
-<a href="{{ .Permalink }}" class="no-underline pa3 bg-grey-1 br1 mb2 db raise w-100">
-
-	{{ .Title }}
-</a>
+    <a href="{{ .Permalink }}" class="no-underline pa3 bg-grey-1 br1 mb2 db raise w-100">
+        {{ .Title }}
+    </a>
 </h2>
-	<p class="mid-gray lh-title mb2">{{ .Date.Format "Mon, Jan 2, 2006" }}</p>
 	<p class="mb0">{{ .Description }}</p>
-<div style="color:grey; font-size:16px;">{{ if .Params.tags }}<strong>Tags:</strong> {{range .Params.tags}}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}{{end}}</div>
-<div style="color:grey; font-size:16px;">{{ if .Params.categories }}<strong>Categories:</strong> {{range .Params.categories}}<a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}{{end}}</div>
-	<p class="link b dib black mb0"><a href="{{ .Permalink }}" class="no-underline pa3 bg-grey-1 br1 mb2 db raise w-100">Read more →</a></p>
+<div>{{ if .Params.authors }}<strong>Автор:</strong> {{range .Params.authors}}<a href="{{ "/authors/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}{{end}}</div>
+<div>{{ if .Params.tags }}<strong>Теги:</strong> {{range .Params.tags}}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}{{end}}</div>
+<div>{{ if .Params.categories }}<strong>Категории:</strong> {{range .Params.categories}}<a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}{{end}}</div>
 https://github.com/giraffeacademy/ga-hugo-theme
 
 

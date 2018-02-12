@@ -3,20 +3,38 @@
 <div class="middle_wr">
     <div class="container_wr">
         <div class="content_wr">
+
             <h1>{{.Title}}</h1>
+
+            {{if .Params.authors}}
+                {{range .Params.authors}}<a href="{{ "/authors/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>{{end}}
+            {{end}}
 
             <div class="page_content song">
       {{ .Content }}
             </div>
-        <div class="tags_wr">
-        <span class="tags">Теги:
-            <!--<a href="#" class="tl-tag">Фолк</a>-->
-            {{.Params.tags}}
-        </span>
+
+            {{ if .Params.tags }}
+            <div class="tags_wr">
+                <span class="tags">Теги:
+                    {{range .Params.tags}}
+                    <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+                    {{end}}
+                </span>
+            </div>
+            {{end}}
+
+            {{ if .Params.categories }}
+            <div class="tags_wr">
+                <span class="tags">Категории:
+                    {{range .Params.categories}}
+                    <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+                    {{end}}
+                </span>
+            </div>
+            {{end}}
         </div>
-            {{.Params.categories}}
     </div>
-  </div>
 
 {{ partial "sidebar" . }}
 
