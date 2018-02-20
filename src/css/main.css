@@ -229,6 +229,7 @@ table {
     padding:10px 10px 15px;
     overflow:hidden;
     position:relative;
+    display: none;
 }
 .header_wr a {
     font-size:48px;
