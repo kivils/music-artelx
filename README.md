@@ -12,12 +12,12 @@ This project is released under the [MIT license](LICENSE). Please make sure you 
 
 ### Prerequisites
 
-You need to have the latest/LTS [node](https://nodejs.org/en/download/) and [npm](https://www.npmjs.com/get-npm) versions installed in order to use Victor Hugo.
+You need to have the latest/LTS [node](https://nodejs.org/en/download/) and [npm](https://www.npmjs.com/get-npm) (or yarn) versions installed in order to use Victor Hugo.
 
 Next step, clone this repository and run:
 
 ```bash
-npm install
+yarn install
 ```
 
 This will take some time and will install all packages necessary to run Victor Hugo and it's tasks.
@@ -27,7 +27,7 @@ This will take some time and will install all packages necessary to run Victor H
 While developing your website, use:
 
 ```bash
-npm start
+yarn start
 ```
 
 or
@@ -43,13 +43,13 @@ Then visit http://localhost:3000/ *- or a new browser windows popped-up already 
 To build a static version of the website inside the `/dist` folder, run:
 
 ```bash
-npm run build
+yarn run build
 ```
 
 To get a preview of posts or articles not yet published, run:
 
 ```bash
-npm run build-preview
+yarn run build-preview
 ```
 
 See [package.json](https://github.com/atomtigerzoo/victor-hugo/blob/readme-updates/package.json#L7) or the included gulp file for all tasks.
