@@ -23,7 +23,7 @@
                 {{ $randomPosts := shuffle (where .Site.Pages "Type" "post") | first 10 }}
                 {{ range $randomPosts }}
                 <li>
-                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                    <a href="{{ .Permalink }}" class="list_title">{{ .Title }}</a>
                     {{if .Params.authors }}
                     {{range .Params.authors }}<a href="{{ "/authors/" | relLangURL }}{{ . | urlize }}" class="list_author">({{ . }})</a>{{end}}
                     {{end}}

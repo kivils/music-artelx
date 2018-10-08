@@ -1,6 +1,6 @@
 baseurl = "/"
 languageCode = "en-us"
-title = "My new Victor-Hugo site"
+title = "Песенник"
 [taxonomies]
     tag = "tags"
     category = "categories"

@@ -1,13 +1,20 @@
 {{ partial "header" . }}
 
-<div class="mw7 center">
-  <ul class="flex-ns flex-wrap mhn1-ns pa3">
-      {{ range .Data.Pages }}
-          <div class="w-50-ns ph1-ns flex">
-            {{ .Render "li"}}
-          </div>
-      {{ end }}
-  </ul>
-</div>
+<div class="middle_wr">
+    <div class="container_wr">
 
-{{ partial "footer" . }}
+        <div class="content_wr">
+          <ul class="list">
+              {{ range .Data.Pages }}
+                  <li class="list-item">
+                    {{ .Render "li"}}
+                  </li>
+              {{ end }}
+          </ul>
+        </div>
+
+    </div>
+
+    {{ partial "sidebar" . }}
+
+</div>
