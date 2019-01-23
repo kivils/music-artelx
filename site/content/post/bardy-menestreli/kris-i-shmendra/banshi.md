@@ -6,14 +6,14 @@ categories: ["Барды, менестрели"]
 ---
 ``` js
 
-Hm          E-Em
-Banshee cried all night long
-Singing a song to break my heart
+Hm             E-Em
+Banshee cried (a-a) all night long
+Singing a song (a-a) to break my heart
 Somebody must be dead before long
 Somebody must be dead
 
 Wedding passed so far(?)
-Only two nights was I carresed by you
+Only tonight was I caressed by you
 And with the dawn you're gone, gone to war
 And with the dawn you're gone
 
@@ -21,7 +21,7 @@ Nothern wind, oh, spread your wings,
 Fly to battlefield, my heart to bring
 To him, I love(?)
 And let it be a shield,
-And let it be a spare, a breath of grespare(???) for him
+And let it be a spear, a breath of grespare(???) for him
 
 I prayed all night
 For my love to stay alive(?)
