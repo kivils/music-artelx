@@ -6,7 +6,7 @@ categories: ["Барды, менестрели"]
 ---
 ``` js
 
-Am          D-Dm
+Hm          E-Em
 Banshee cried all night long
 Singing a song to break my heart
 Somebody must be dead before long
