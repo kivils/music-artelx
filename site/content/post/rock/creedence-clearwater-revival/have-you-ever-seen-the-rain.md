@@ -2,7 +2,7 @@
 title: Have you ever seen the rain
 authors: ["Creedence Clearwater Revival"]
 tags: ["Фолк", "Рок"]
-categories: ["Рок"]
+categories: ["Рок, Кантри"]
 ---
 
 ``` js
@@ -47,4 +47,6 @@ F        G               C
  I want to know
  Have you ever seen the rain
  Comin' down on a sunny day?
+
+1970
 ```
