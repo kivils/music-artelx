@@ -3,6 +3,6 @@
         {{ .Title }}
     </a>
 </h2>
-{{ if .Params.authors }}<div><strong>Автор:</strong> {{range .Params.authors}}<a href="{{ "/authors/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}</div>{{end}}
-{{ if .Params.tags }}<div><strong>Теги:</strong> {{range .Params.tags}}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}</div>{{end}}
-{{ if .Params.categories }}<div><strong>Категории:</strong> {{range .Params.categories}}<a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}</div>{{end}}
+{{ if .Params.authors }}<div class="tags"><strong>Автор:</strong> {{range .Params.authors}}<a href="{{ "/authors/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}</div>{{end}}
+{{ if .Params.tags }}<div class="tags"><strong>Теги:</strong> {{range .Params.tags}}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}</div>{{end}}
+{{ if .Params.categories }}<div class="tags"><strong>Категории:</strong> {{range .Params.categories}}<a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}</div>{{end}}

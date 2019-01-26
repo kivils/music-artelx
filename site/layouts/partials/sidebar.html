@@ -6,7 +6,21 @@
         <ul>
         {{ range $key, $value := . }}
             <li>
-                <a href="{{ "/categories/" | relLangURL  }}{{ $key | urlize }}">{{ $key }}</a>
+                <a href="{{ "/categories/" | relLangURL  }}{{ $key | urlize }}" class="list_title">{{ $key }}</a> <span class="list_author">({{ .Count }})</span>
+            </li>
+        {{ end }}
+        </ul>
+        {{ end }}
+    </div>
+
+    <div class="sidebar_block">
+        <h3>По авторам</h3>
+
+        {{ with .Site.Taxonomies.authors }}
+        <ul>
+        {{ range $key, $value := . }}
+            <li>
+                <a href="{{ "/authors/" | relLangURL  }}{{ $key | urlize }}" class="list_title">{{ $key }}</a> <span class="list_author">({{ .Count }})</span>
             </li>
         {{ end }}
         </ul>
@@ -35,7 +49,6 @@
 
     <div class="sidebar_block">
         <h3>Песни по тегам</h3>
-
         {{ with .Site.Taxonomies.tags }}
         <ul>
             {{ range $key, $value := . }}

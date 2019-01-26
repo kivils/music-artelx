@@ -126,8 +126,8 @@ img {
     height: auto!important;
 }
 .content_wr iframe {
-    width: 100%!important;
-    margin-bottom: 16px;
+    /*width: 100%!important;*/
+    /*margin-bottom: 16px;*/
 }
 
 p {
@@ -256,9 +256,22 @@ table {
 
 .page_content.song {
     font-family: Courier, "Courier New", monospace;
+    margin-bottom: 40px;
 }
 .tags_wr {
     margin: 0 0 20px;
+}
+
+.tags {
+
+}
+
+.tags a:after {
+    content: ',';
+}
+
+.tags a:last-child:after {
+    content: '';
 }
 
 .sorting_letters {
@@ -337,6 +350,7 @@ table {
 }
 .sidebar_block ul li ul {
     margin-left: 20px;
+    flex: 1 1 100%;
 }
 .sidebar_block ul li ul li {
     padding: 5px 0 0;

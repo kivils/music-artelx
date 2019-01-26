@@ -2,7 +2,7 @@
 title: Have you ever seen the rain
 authors: ["Creedence Clearwater Revival"]
 tags: ["Фолк", "Рок"]
-categories: ["Рок, Кантри"]
+categories: ["Рок", "Кантри"]
 ---
 
 ``` js

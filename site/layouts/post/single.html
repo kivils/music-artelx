@@ -7,7 +7,7 @@
             <h1>{{.Title}}</h1>
 
             {{if .Params.authors}}
-                {{range .Params.authors}}<a href="{{ "/authors/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>{{end}}
+                <p>{{range .Params.authors}}<a href="{{ "/authors/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>{{end}}</p>
             {{end}}
 
             <div class="page_content song">
