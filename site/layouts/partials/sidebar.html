@@ -1,6 +1,17 @@
 <div class="leftcol_wr">
     <div class="sidebar_block">
         <h3>Каталог песен</h3>
+        <ul>
+            {{ range .Site.Menus.main }}
+            <li>
+                <a class="sidebar-nav-item]" href="{{ .URL }}">{{ .Name }}</a>
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+
+    <div class="sidebar_block">
+        <h3>Каталог песен</h3>
 
         {{ with .Site.Taxonomies.categories }}
         <ul>
@@ -30,7 +41,6 @@
 
     <div class="sidebar_block">
         <h3>Случайные песни</h3>
-
 
         <div class="songs_list list_rand">
             <ul>

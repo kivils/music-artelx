@@ -1,6 +1,7 @@
 baseurl = "/"
 languageCode = "en-us"
 title = "Песенник"
+sectionPagesMenu = "main"
 [taxonomies]
     tag = "tags"
     category = "categories"
