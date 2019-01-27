@@ -2,41 +2,30 @@
     <div class="sidebar_block">
         <h3>Каталог песен</h3>
         <ul>
+            {{ $currentPage := . }}
             {{ range .Site.Menus.main }}
-            <li>
-                <a class="sidebar-nav-item]" href="{{ .URL }}">{{ .Name }}</a>
-            </li>
+                {{ if .HasChildren }}
+                <li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
+                    <a href="{{ .URL }}">
+                        <span>{{ .Name }}</span>
+                        <ul class="sub-menu">
+                            {{ range .Children }}
+                            <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
+                            <a href="{{ .URL }}">{{ .Name }}</a>
+                            </li>
+                            {{ end }}
+                        </ul>
+                    </a>
+                </li>
+                {{ else }}
+                <li>
+                    <a href="{{ .URL }}">
+                        <span>{{ .Name }}</span>
+                    </a>
+                </li>
+                {{ end }}
             {{ end }}
         </ul>
-    </div>
-
-    <div class="sidebar_block">
-        <h3>Каталог песен</h3>
-
-        {{ with .Site.Taxonomies.categories }}
-        <ul>
-        {{ range $key, $value := . }}
-            <li>
-                <a href="{{ "/categories/" | relLangURL  }}{{ $key | urlize }}" class="list_title">{{ $key }}</a> <span class="list_author">({{ .Count }})</span>
-            </li>
-        {{ end }}
-        </ul>
-        {{ end }}
-    </div>
-
-    <div class="sidebar_block">
-        <h3>По авторам</h3>
-
-        {{ with .Site.Taxonomies.authors }}
-        <ul>
-        {{ range $key, $value := . }}
-            <li>
-                <a href="{{ "/authors/" | relLangURL  }}{{ $key | urlize }}" class="list_title">{{ $key }}</a> <span class="list_author">({{ .Count }})</span>
-            </li>
-        {{ end }}
-        </ul>
-        {{ end }}
-
     </div>
 
     <div class="sidebar_block">
@@ -44,7 +33,7 @@
 
         <div class="songs_list list_rand">
             <ul>
-                {{ $randomPosts := shuffle (where .Site.Pages "Type" "post") | first 10 }}
+                {{ $randomPosts := shuffle (where .Site.Pages "Type" "!=" "categ") | first 10 }}
                 {{ range $randomPosts }}
                 <li>
                     <a href="{{ .Permalink }}" class="list_title">{{ .Title }}</a>
