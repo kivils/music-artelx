@@ -247,14 +247,22 @@ table {
 /* Content */
 .middle_wr {
     padding: 10px;
-    display: flex;
 }
 
-.container_wr {
-    flex: 1 1 auto;
+@media (min-width: 768px) {
+    .middle_wr {
+        display: flex;
+    }
 }
 
-.page_content.song {
+@media (min-width: 768px) {
+    .container_wr {
+        flex: 1 1 auto;
+    }
+}
+
+.page_content.song,
+.page_content.song code {
     font-family: Courier, "Courier New", monospace;
     margin-bottom: 40px;
 }

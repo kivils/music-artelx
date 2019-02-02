@@ -7,7 +7,12 @@
       <h1>{{.Title}}</h1>
 
       {{if .Params.authors}}
-      <p>{{range .Params.authors}}<a href="{{ "/authors/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>{{end}}</p>
+      <div class="tags_wr">
+        <span class="tags">{{range .Params.authors}}
+          <a href="{{ "/authors/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+          {{end}}
+        </span>
+      </div>
       {{end}}
 
       <div class="page_content song">
@@ -16,21 +21,21 @@
 
       {{ if .Params.tags }}
       <div class="tags_wr">
-                <span class="tags">Теги:
-                    {{range .Params.tags}}
-                    <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
-                  {{end}}
-                </span>
+        <span class="tags">Теги:
+            {{range .Params.tags}}
+            <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+          {{end}}
+        </span>
       </div>
       {{end}}
 
       {{ if .Params.categories }}
       <div class="tags_wr">
-                <span class="tags">Категории:
-                    {{range .Params.categories}}
-                    <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
-                  {{end}}
-                </span>
+        <span class="tags">Категории:
+            {{range .Params.categories}}
+            <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+          {{end}}
+        </span>
       </div>
       {{end}}
     </div>
