@@ -4,7 +4,8 @@ authors: ["Queen", "Freddie Mercury"]
 tags: ["Лирика"]
 categories: ["Рок"]
 ---
-Freddie Mercury
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/sUJkCXE4sAA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ``` js
 Love of my life, you've hurt me

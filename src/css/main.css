@@ -126,8 +126,8 @@ img {
     height: auto!important;
 }
 .content_wr iframe {
-    /*width: 100%!important;*/
-    /*margin-bottom: 16px;*/
+    max-width: 100%;
+    margin-bottom: 16px;
 }
 
 p {
@@ -266,6 +266,11 @@ table {
     font-family: Courier, "Courier New", monospace;
     margin-bottom: 40px;
 }
+
+.page_content.song pre {
+    overflow-x: auto;
+}
+
 .tags_wr {
     margin: 0 0 20px;
 }
