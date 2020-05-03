@@ -1,0 +1,10 @@
+{
+  "main": {
+    "css": "main.css",
+    "js": "main.js"
+  },
+  "": {
+    "keep": "fonts/.keep",
+    "json": "64a2ef7f0f57b237ed6d.hot-update.json"
+  }
+}

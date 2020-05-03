@@ -1,5 +1,5 @@
 baseurl = "/"
-LanguageLang = "ru"
+languageLang = "ru"
 languageCode = "RU-ru"
 title = "Песенник"
 [menu]
@@ -9,7 +9,7 @@ title = "Песенник"
     author = "authors"
 
 # RSS, categories and tags disabled for an easy start
-# See configuration options for more details: 
+# See configuration options for more details:
 # https://gohugo.io/getting-started/configuration/#toml-configuration
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 preserveTaxonomyNames = true
