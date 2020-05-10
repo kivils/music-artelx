@@ -1,11 +1,14 @@
 {{ define "main" }}
-    <h1>{{ .Title }}</h1>
-111
+<h1>{{ .Title }}</h1>
+
+<div class="w-100 flex-ns mhn1-ns flex-wrap mb3">
+    333
     <ul class="list">
         {{ printf "%#v" .Page.Type }}
         {{ range (.Paginator 5).Pages.ByPublishDate.Reverse }}
-          {{ .Render "li"}}
+            {{ .Render "li"}}
         {{ end }}
     </ul>
     {{ partial "pagination" . }}
+</div>
 {{end}}

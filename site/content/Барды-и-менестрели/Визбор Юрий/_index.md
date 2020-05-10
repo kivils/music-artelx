@@ -1,10 +1,10 @@
 ---
-title: Юрий Визбор
-linktitle: Юрий Визбор
+title: Визбор Юрий
+linktitle: Визбор Юрий
 type: categ
 menu:
   main:
-    title: "Юрий Визбор"
+    title: "Визбор Юрий"
     parent: "Барды-и-менестрели"
     weight: 130
 ---

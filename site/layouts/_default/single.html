@@ -1,48 +1,36 @@
-{{ partial "header" . }}
+{{ define "main" }}
+    <h1>{{.Title}}</h1>
 
-<div class="middle_wr">
-  <div class="container_wr">
-    <div class="content_wr">
-
-      <h1>{{.Title}}</h1>
-
-      {{if .Params.authors}}
-      <div class="tags_wr">
-        <span class="tags">{{range .Params.authors}}
-          <a href="{{ "/authors/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
-          {{end}}
-        </span>
-      </div>
-      {{end}}
-
-      <div class="page_content song">
-        {{ .Content }}
-      </div>
-
-      {{ if .Params.tags }}
-      <div class="tags_wr">
-        <span class="tags">Теги:
-            {{range .Params.tags}}
-            <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
-          {{end}}
-        </span>
-      </div>
-      {{end}}
-
-      {{ if .Params.categories }}
-      <div class="tags_wr">
-        <span class="tags">Категории:
-            {{range .Params.categories}}
-            <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
-          {{end}}
-        </span>
-      </div>
-      {{end}}
+    {{if .Params.authors}}
+    <div class="tags_wr">
+      <span class="tags">{{range .Params.authors}}
+        <a href="{{ "/authors/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+        {{end}}
+      </span>
     </div>
-  </div>
+    {{end}}
 
-  {{ partial "sidebar" . }}
+    <div class="page_content song">
+      {{ .Content }}
+    </div>
 
-</div>
+    {{ if .Params.tags }}
+    <div class="tags_wr">
+      <span class="tags">Теги:
+          {{range .Params.tags}}
+          <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+        {{end}}
+      </span>
+    </div>
+    {{end}}
 
-{{ partial "footer" . }}
+    {{ if .Params.categories }}
+    <div class="tags_wr">
+      <span class="tags">Категории:
+          {{range .Params.categories}}
+          <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+        {{end}}
+      </span>
+    </div>
+    {{end}}
+{{end}}

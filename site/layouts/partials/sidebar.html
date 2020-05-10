@@ -33,7 +33,7 @@
 
         <div class="songs_list list_rand">
             <ul>
-                {{ $randomPosts := shuffle (where .Site.Pages "Type" "!=" "categ") | first 10 }}
+                {{ $randomPosts := shuffle (where .Site.Pages "Type" "not in" (slice "categ" "tags" "categories" "authors")) | first 10 }}
                 {{ range $randomPosts }}
                 <li>
                     <a href="{{ .Permalink }}" class="list_title">{{ .Title }}</a>

@@ -1,6 +1,7 @@
 baseurl = "/"
+DefaultContentLanguage = "ru"
+languageCode = "ru-ru"
 languageLang = "ru"
-languageCode = "RU-ru"
 title = "Песенник"
 [menu]
 [taxonomies]

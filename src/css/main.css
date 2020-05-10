@@ -184,24 +184,25 @@ ol ol {
 ul li, ol li {
     list-style: none;
 }
-.content_wr ul,
-.content_wr ol {
-    margin-left: 15px;
-}
-.content_wr ul li {
-    list-style: none outside;
-    margin-left: 15px;
-    padding-bottom: 8px;
-    vertical-align: middle;
-}
-.content_wr ul li:before {
-    /*content: "- ";*/
-    /*margin-left: -15px;*/
-}
-.content_wr ol li {
-    list-style: decimal outside;
-    margin-left: 15px;
-}
+/*.content_wr ul,*/
+/*.content_wr ol {*/
+    /*margin-left: 15px;*/
+/*}*/
+/*.content_wr ul li {*/
+    /*list-style: none outside;*/
+    /*margin-left: 15px;*/
+    /*padding-bottom: 8px;*/
+    /*vertical-align: middle;*/
+/*}*/
+/*.content_wr ul li:before {*/
+    /*!*content: "- ";*!*/
+    /*!*margin-left: -15px;*!*/
+/*}*/
+/*.content_wr ol li {*/
+    /*list-style: decimal outside;*/
+    /*margin-left: 15px;*/
+/*}*/
+
 hr {
     margin-top: 20px;
     margin-bottom: 20px;
