@@ -1,11 +1,10 @@
+{{ define "title" }}{{.Title}} | {{.Site.Title}}{{end}}
 {{ define "main" }}
     <h1>{{ .Title }}</h1>
 111
     <ul class="list">
-        {{ printf "%#v" .Page.Type }}
-        {{ range (.Paginator 5).Pages.ByPublishDate.Reverse }}
-          {{ .Render "li"}}
+        {{ range .Pages }}
+            {{ .Render "li"}}
         {{ end }}
     </ul>
-    {{ partial "pagination" . }}
 {{end}}

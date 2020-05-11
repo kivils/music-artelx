@@ -5,7 +5,7 @@
             {{ $currentPage := . }}
             {{ range .Site.Menus.main }}
                 {{ if .HasChildren }}
-                <li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
+                <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
                     <a href="{{ .URL }}">
                         <span>{{ .Name }}</span>
                         <ul class="sub-menu">
@@ -33,7 +33,7 @@
 
         <div class="songs_list list_rand">
             <ul>
-                {{ $randomPosts := shuffle (where .Site.Pages "Type" "not in" (slice "categ" "tags" "categories" "authors")) | first 10 }}
+                {{ $randomPosts := shuffle (where .Site.Pages "Kind" "page" ) | first 10 }}
                 {{ range $randomPosts }}
                 <li>
                     <a href="{{ .Permalink }}" class="list_title">{{ .Title }}</a>

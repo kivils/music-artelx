@@ -1,14 +1,13 @@
+{{ define "title" }}{{.Title}} | {{.Site.Title}}{{end}}
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
-
-<div class="w-100 flex-ns mhn1-ns flex-wrap mb3">
+    <h1>{{ .Title }}</h1>
     333
     <ul class="list">
-        {{ printf "%#v" .Page.Type }}
-        {{ range (.Paginator 5).Pages.ByPublishDate.Reverse }}
+        {{ $pages := where .Site.Pages "Kind"  "page" }}
+        {{ $pages := $pages | intersect ( where .Site.Pages "Type" .Page.Section ) }}
+        {{ range $pages }}
             {{ .Render "li"}}
-        {{ end }}
+        {{end}}
+
     </ul>
-    {{ partial "pagination" . }}
-</div>
 {{end}}

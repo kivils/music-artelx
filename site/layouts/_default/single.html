@@ -1,6 +1,6 @@
+{{ define "title" }}{{.Title}} | {{.Site.Title}}{{end}}
 {{ define "main" }}
     <h1>{{.Title}}</h1>
-
     {{if .Params.authors}}
     <div class="tags_wr">
       <span class="tags">{{range .Params.authors}}

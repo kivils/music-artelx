@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <base href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
-  <title>{{ $.Site.Title }}</title>
+  <title> {{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
   <link href="favicon.ico" type="image/x-icon" rel="shortcut icon">
 
   {{ $stylesheet := .Site.Data.webpack.main }}
@@ -18,7 +18,7 @@
     <div class="middle_wr">
       <div class="container_wr">
         <div class="content_wr">
-          {{ block "main" . }}{{end}}
+          {{ block "main" . }}{{ end }}
         </div>
       </div>
       {{ block "sidebar" . }}{{ partial "sidebar" . }}{{end}}
