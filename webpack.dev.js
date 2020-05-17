@@ -14,7 +14,7 @@ module.exports = merge(common, {
   },
 
   devServer: {
-    port: process.env.PORT || 3001,
+    port: process.env.PORT || 3000,
     contentBase: path.join(process.cwd(), "./dist"),
     watchContentBase: true,
     quiet: false,
@@ -29,7 +29,7 @@ module.exports = merge(common, {
       cleanOnceBeforeBuildPatterns: [
         "dist/**/*.js",
         "dist/**/*.css",
-        "site/content/webpack.json"
+        "site/data/webpack.json"
       ]}),
 
     new MiniCssExtractPlugin({

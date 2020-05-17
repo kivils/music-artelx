@@ -1,10 +1,6 @@
-<li class="list-item">
-    <h2 class="item-title">
-        <a href="{{ .Permalink }}" class="item-link">
-            {{ .Title }}
-        </a>
-    </h2>
-    {{ if .Params.authors }}<div class="tags"><strong>Автор:</strong> {{range .Params.authors}}<a href="{{ "/authors/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}</div>{{end}}
-    {{ if .Params.tags }}<div class="tags"><strong>Теги:</strong> {{range .Params.tags}}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}</div>{{end}}
-    {{ if .Params.categories }}<div class="tags"><strong>Категории:</strong> {{range .Params.categories}}<a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}</div>{{end}}
-</li>
+<a href="{{ .RelPermalink }}" class="no-underline pa3 bg-grey-1 br1 mb2 db raise w-100">
+	<h2 class="f3 b lh-title mb1 primary">{{ .Title }}</h2>
+	<p class="mid-gray lh-title mb2">{{ .Date.Format "Mon, Jan 2, 2006" }}</p>
+	<p class="mb0">{{ .Description }}</p>
+	<p class="link b dib black mb0">Read more →</p>
+</a>
