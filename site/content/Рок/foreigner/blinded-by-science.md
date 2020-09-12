@@ -4,8 +4,9 @@ authors: ["Foreigner"]
 tags: ["Лирика"]
 categories: ["Рок"]
 mainCategory: "Foreigner"
+youtube: "https://www.youtube.com/embed/S_JgYXp9_UU"
 ---
-<iframe width="560" height="315" src="https://www.youtube.com/embed/S_JgYXp9_UU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ``` js
 Humberto Nieves / Sergio George
  

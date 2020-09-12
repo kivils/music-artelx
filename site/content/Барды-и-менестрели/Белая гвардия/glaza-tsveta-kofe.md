@@ -4,10 +4,10 @@ authors: ["Белая гвардия"]
 tags: ["Авторская", "Зоя Ященко"]
 categories: ["Барды"]
 mainCategory: "Белая гвардия"
+youtube: "https://www.youtube.com/embed/4neShB4gXHc"
 ---
 Зоя Ященко
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/4neShB4gXHc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ``` js
     C          Am
 Когда я дочитаю этот роман,

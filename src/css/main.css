@@ -92,11 +92,12 @@ img {
     vertical-align: middle;
     border: 0;
 }
-.content_wr img {
+.content img {
     max-width: 100%;
     height: auto!important;
 }
 .content_wr iframe {
+    width: 100%;
     max-width: 100%;
     margin-bottom: 16px;
 }

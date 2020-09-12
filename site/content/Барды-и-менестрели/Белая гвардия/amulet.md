@@ -4,8 +4,8 @@ authors: ["Белая гвардия"]
 tags: ["Авторская", "Зоя Ященко"]
 categories: ["Барды", "Менестрели"]
 mainCategory: "Белая гвардия"
+youtube: "https://www.youtube.com/embed/m3t428MTXQI"
 ---
-<iframe width="560" height="315" src="https://www.youtube.com/embed/m3t428MTXQI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ``` js
                 Cm                            Fm
 Ты лежишь на горе, на высокой горе, и видишь сон,
