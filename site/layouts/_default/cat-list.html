@@ -1,7 +1,8 @@
 {{ define "title" }}{{.Title}} | {{.Site.Title}}{{end}}
 {{ define "main" }}
     <h1>{{ .Title }}</h1>
-    333
+{{ printf "%#v" .Page.Kind}}<br/>
+{{ printf "%#v" .Page.Section}}<br/>
     <ul class="list">
         {{ $pages := where .Site.Pages "Kind"  "page" }}
         {{ $pages := $pages | intersect ( where .Site.Pages "Type" .Page.Section ) }}

@@ -1,2 +1,4 @@
-<a href="{{ .Permalink }}">{{ .Title }}</a>
-{{range .Params.authors}}<a href="{{ "/authors/" | relLangURL }}{{ . | urlize }}" class="list_author">({{ . }})</a>{{end}}
+<li class="list-item">
+  <a href="{{ .Permalink }}">{{ .Title }}</a>
+  {{range .Params.authors}}<a href="{{ "/authors/" | relLangURL }}{{ . | urlize }}" class="list_author">({{ . }})</a>{{end}}
+</li>

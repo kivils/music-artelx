@@ -3,6 +3,7 @@ title: Blinded by science
 authors: ["Foreigner"]
 tags: ["Лирика"]
 categories: ["Рок"]
+mainCategory: "Foreigner"
 ---
 <iframe width="560" height="315" src="https://www.youtube.com/embed/S_JgYXp9_UU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ``` js

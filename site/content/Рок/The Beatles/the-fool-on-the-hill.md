@@ -3,6 +3,7 @@ title: The fool on the hill
 authors: ["The Beatles"]
 tags: ["Лирика"]
 categories: ["Рок"]
+mainCategory: "The Beatles"
 ---
 ``` js
 John Lennon / Paul McCartney

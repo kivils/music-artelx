@@ -1,6 +1,7 @@
 {{ define "main" }}
 
-{{ printf "%#v" .Page.Type }}
-{{ partial "blog" . }}
+<h1>Последние добавленные песни</h1>
+
+{{ partial "last-songs" . }}
 
 {{ end }}

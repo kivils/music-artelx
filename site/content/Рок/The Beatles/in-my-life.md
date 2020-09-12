@@ -3,6 +3,7 @@ title: In my life
 authors: ["The Beatles"]
 tags: ["Лирика"]
 categories: ["Рок"]
+mainCategory: "The Beatles"
 ---
 ``` js
 John Lennon / Paul McCartney

@@ -3,6 +3,7 @@ title: Натюрморт
 authors: ["Иваси"]
 tags: ["Лирика"]
 categories: ["Барды, менестрели"]
+mainCategory: "Иваси"
 ---
 ``` js
   E7        Am7    D7   G7+        Am7       H7    Em9+

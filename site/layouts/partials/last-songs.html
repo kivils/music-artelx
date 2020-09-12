@@ -1,0 +1,9 @@
+<div>
+
+	<ul class="list">
+		{{ range first 20 (where .Site.Pages "Kind" "page") }}
+		{{ .Render "li"}}
+		{{ end }}
+	</ul>
+
+</div>

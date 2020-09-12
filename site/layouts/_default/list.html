@@ -1,15 +1,13 @@
 {{ define "main" }}
-List <br>
-{{ printf "%#v" .Page.Kind }}
-<div class="mw7 center">
-  <ul class="flex-ns flex-wrap mhn1-ns pa3">
-      {{ range (.Paginator 4).Pages.ByPublishDate.Reverse }}
-          <div class="w-50-ns ph1-ns flex">
-            {{ .Render "li"}}
-          </div>
+  <div>
+    <h1>{{ .Title }}</h1>
+    <ul class="list">
+      {{ $pages := where .Site.Pages "Kind"  "taxonomy" }}
+      {{ $pages := $pages | intersect ( where .Site.Pages "Type" "categ" ) }}
+      {{ $pages := $pages | intersect ( where .Site.Pages "Section" .Page.Section ) }}
+      {{ range $pages }}
+          {{ .Render "li"}}
       {{ end }}
-  </ul>
-  {{ partial "pagination" . }}
-</div>
-
+    </ul>
+  </div>
 {{end}}

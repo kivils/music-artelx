@@ -1,17 +1,23 @@
 <!doctype html>
 <html lang="{{ $.Site.Language.Lang }}">
   {{ partial "head" . }}
-  <body class="sans-serif">
-
-    {{ block "header" . }}{{ partial "nav" . }}{{end}}
-
-    {{ block "main" . }}{{ end }}
-
-    {{ block "footer" . }}{{ partial "footer" . }}{{end}}
-
-    {{ $script := .Site.Data.webpack.main }}
-    {{ with $script.js }}
-      <script src="{{ relURL . }}"></script>
-    {{ end }}
+  <body>
+    <div class="wrapper">
+      {{ block "header" . }}{{ partial "header" . }}{{end}}
+      <div class="middle_wr">
+        <div class="container_wr">
+          <div class="content_wr">
+            {{ block "breadcrumb" . }}{{ partial "breadcrumb" . }}{{end}}
+            {{ block "main" . }}{{ end }}
+          </div>
+        </div>
+        {{ block "sidebar" . }}{{ partial "sidebar" . }}{{end}}
+      </div>
+      {{ block "footer" . }}{{ partial "footer" . }}{{end}}
+    </div>
+      {{ $script := .Site.Data.webpack.main }}
+      {{ with $script.js }}
+        <script src="{{ relURL . }}"></script>
+      {{ end }}
   </body>
 </html>

@@ -3,6 +3,7 @@ title: Working Class Hero
 authors: ["The Beatles"]
 tags: ["Лирика"]
 categories: ["Рок"]
+mainCategory: "The Beatles"
 ---
 ``` js
 John Lennon (Single from the album "John Lennon/Plastic Ono Band")

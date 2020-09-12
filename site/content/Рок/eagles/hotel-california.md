@@ -3,6 +3,7 @@ title: Hotel California
 authors: ["Eagles"]
 tags: ["Лирика"]
 categories: ["Рок"]
+mainCategory: "Eagles"
 ---
 ``` js
 Don Felder / Don Henley / Glenn Frey

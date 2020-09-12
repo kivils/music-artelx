@@ -3,6 +3,7 @@ title: Фрегат
 authors: ["Иваси"]
 tags: ["Лирика"]
 categories: ["Барды, менестрели"]
+mainCategory: "Иваси"
 ---
 ``` js
                      Алексей Иващенко

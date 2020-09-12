@@ -4,6 +4,8 @@
     http://demo.artelx.ru
 */
 
+@import './imports/_forms';
+
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
     display: block;
 }
@@ -27,37 +29,6 @@ audio:not([controls]) {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-}
-
-input {
-    font: normal 16px Arial, Tahoma, sans-serif;
-    color: #888;
-    width: 100%;
-    height: 27px;
-    line-height: 27px;
-    margin-bottom: 10px;
-    padding: 4px 8px;
-    vertical-align: middle;
-    border: 1px solid #828282;
-    background: #fff;
-}
-input[type="text"]:focus {
-    border-color: #333;
-}
-input[type="submit"] {
-    font-style: normal;
-    color: #ffffff;
-    width: auto;
-    height: 27px;
-    line-height: 27px;
-    padding: 0 15px 3px;
-    cursor: pointer;
-    border: 0;
-    background: #863a20;
-}
-input[type="submit"]:hover,
-input[type="submit"]:focus {
-    opacity: .8;
 }
 
 .search_wr {
@@ -299,29 +270,29 @@ table {
     margin: 0 2px;
 }
 
-.content_wr .breadcrumbs_wr,
-.content_wr .breadcrumbs_wr > * {
-    line-height: 19px;
-}
-.content_wr .breadcrumbs_wr ul {
-    margin-left: 0;
-}
-.content_wr .breadcrumbs_wr ul li,
-.content_wr .breadcrumbs_wr ul li a,
-.content_wr .breadcrumbs_wr ul li span {
-    display: inline;
-    padding: 0;
-    margin: 0;
-    vertical-align: top;
-}
-.breadcrumbs_wr li:before {
-    display: none;
-}
-.B_currentCrumb,
-.crumb_sep {
-    color: #999;
+/* Breadcrumbs */
+.breadcrumbs {
+    margin-bottom: 10px;
 }
 
+.breadcrumbs li {
+    display: inline-block;
+}
+
+.breadcrumbs li::before {
+    content: '/';
+    display: inline-block;
+}
+
+.breadcrumbs li:first-child::before {
+    display: none;
+}
+
+.breadcrumbs a {
+    display: inline-block;
+}
+
+/* */
 .leftcol_wr {
     font-size: 14px;
     /*position: relative;*/

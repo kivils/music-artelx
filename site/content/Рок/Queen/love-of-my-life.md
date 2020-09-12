@@ -3,6 +3,7 @@ title: Love of My Life
 authors: ["Queen", "Freddie Mercury"]
 tags: ["Лирика"]
 categories: ["Рок"]
+mainCategory: "Queen"
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/sUJkCXE4sAA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

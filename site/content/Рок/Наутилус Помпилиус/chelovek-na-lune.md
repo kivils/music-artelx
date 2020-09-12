@@ -3,6 +3,7 @@ title: Человек на Луне
 authors: ["Наутилус Помпилиус"]
 tags: [""]
 categories: ["Рок"]
+mainCategory: "Наутилус Помпилиус"
 ---
 
 ``` js

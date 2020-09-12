@@ -3,6 +3,7 @@ title: Милая моя
 authors: ["Визбор Юрий"]
 tags: ["Лирика"]
 categories: ["Барды, менестрели"]
+mainCategory: "Визбор Юрий"
 ---
 ``` js
  Em

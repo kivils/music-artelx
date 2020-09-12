@@ -1,0 +1,11 @@
+{{ define "main" }}
+  <div>
+    <h1>{{ .Title }}</h1>
+    <ul class="list">
+      {{ $pages := where .Site.Pages ".Params.maincategory" "=" .Title }}
+      {{ range $pages }}
+          {{ .Render "li"}}
+      {{ end }}
+    </ul>
+  </div>
+{{end}}

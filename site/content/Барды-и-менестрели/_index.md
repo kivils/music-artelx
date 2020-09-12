@@ -1,7 +1,6 @@
 ---
 title: Барды и менестрели
 linktitle: Барды и менестрели
-type: categ
 menu:
   main:
     identifier: "Барды-и-менестрели"

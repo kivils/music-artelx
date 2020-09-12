@@ -1,7 +1,6 @@
 ---
 title: Рок
 linktitle: Рок
-type: "categ"
 menu:
   main:
     identifier: "Рок"
