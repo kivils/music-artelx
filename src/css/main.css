@@ -252,11 +252,11 @@ table {
 
 }
 
-.tags a:after {
-    content: ',';
+.tags .tag:after {
+    content: ', ';
 }
 
-.tags a:last-child:after {
+.tags .tag:last-child:after {
     content: '';
 }
 

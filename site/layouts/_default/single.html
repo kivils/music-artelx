@@ -1,5 +1,6 @@
 {{ define "main" }}
   <h1>{{.Title}}</h1>
+<!--
   {{if .Params.authors}}
   <div class="tags_wr">
     <span class="tags">{{range .Params.authors}}
@@ -8,7 +9,7 @@
     </span>
   </div>
   {{end}}
-
+-->
   <div class="page_content song">
     {{ if .Params.youtube}}
       <div class="video">
@@ -24,7 +25,7 @@
     </div>
     {{end}}
   </div>
-
+<!--
   {{ if .Params.tags }}
   <div class="tags_wr">
     <span class="tags">Теги:
@@ -44,5 +45,5 @@
     </span>
   </div>
   {{end}}
-
+-->
 {{ end }}

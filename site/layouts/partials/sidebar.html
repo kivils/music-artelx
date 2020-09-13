@@ -38,7 +38,11 @@
                 <li>
                     <a href="{{ .Permalink }}" class="list_title">{{ .Title }}</a>
                     {{if .Params.authors }}
-                    {{range .Params.authors }}<a href="{{ "/authors/" | relLangURL }}{{ . | urlize }}" class="list_author">({{ . }})</a>{{end}}
+                        {{range .Params.authors }}
+                            <!--<a href="{{ "/authors/" | relLangURL }}{{ . | urlize }}" class="list_author">-->
+                                ({{ . }})
+                            <!--</a>-->
+                        {{end}}
                     {{end}}
                 </li>
                 {{ end }}
@@ -46,6 +50,7 @@
         </div>
     </div>
 
+    <!--
     <div class="sidebar_block">
         <h3>Песни по тегам</h3>
         {{ with .Site.Taxonomies.tags }}
@@ -56,4 +61,5 @@
         </ul>
         {{ end }}
     </div>
+    -->
 </div>
