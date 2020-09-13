@@ -7,7 +7,7 @@ mainCategory: "Foreigner"
 youtube: "https://www.youtube.com/embed/raNGeq3_DtM"
 ---
 
-``` js
+```
 Jones Michael Leslie
  
 I gotta take a little time,

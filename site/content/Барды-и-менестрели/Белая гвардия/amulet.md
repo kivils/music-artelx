@@ -6,7 +6,7 @@ categories: ["Барды", "Менестрели"]
 mainCategory: "Белая гвардия"
 youtube: "https://www.youtube.com/embed/m3t428MTXQI"
 ---
-``` js
+```
                 Cm                            Fm
 Ты лежишь на горе, на высокой горе, и видишь сон,
               G                         Cm

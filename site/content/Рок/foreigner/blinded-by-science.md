@@ -7,7 +7,7 @@ mainCategory: "Foreigner"
 youtube: "https://www.youtube.com/embed/S_JgYXp9_UU"
 ---
 
-``` js
+```
 Humberto Nieves / Sergio George
  
 Bm G Em F#

@@ -4,8 +4,10 @@ authors: ["Белая гвардия"]
 tags: ["Авторская", "Зоя Ященко"]
 categories: ["Барды"]
 mainCategory: "Белая гвардия"
+chords: ["em", "am", "d7", "g", "c", "h7", "e7"]
 ---
-``` js
+
+```
 Зоя Ященко
 
      { Am D7 G C Am H7 Em E7 }

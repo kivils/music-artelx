@@ -235,7 +235,7 @@ table {
 }
 
 .page_content.song,
-.page_content.song code {
+.page_content.song .highlight {
     font-family: Courier, "Courier New", monospace;
     margin-bottom: 40px;
 }
@@ -269,6 +269,15 @@ table {
 }
 .sorting_letters a {
     margin: 0 2px;
+}
+
+.chords {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.chord {
+
 }
 
 /* Breadcrumbs */

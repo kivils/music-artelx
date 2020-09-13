@@ -5,7 +5,7 @@ tags: ["Лирика"]
 categories: ["Рок"]
 mainCategory: "The Beatles"
 ---
-``` js
+```
 John Lennon (Single from the album "John Lennon/Plastic Ono Band")
  
 As soon as you're born they make you feel small

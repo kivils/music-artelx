@@ -5,7 +5,7 @@ tags: ["Лирика"]
 categories: ["Рок"]
 mainCategory: "The Beatles"
 ---
-``` js
+```
 John Lennon / Paul McCartney
  
 Day after day, alone on the hill

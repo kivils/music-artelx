@@ -16,6 +16,13 @@
       </div>
     {{end}}
     {{ .Content }}
+    {{ if .Params.chords}}
+    <div class="chords">
+      {{range .Params.chords}}
+      <span class="{{ . }} chord"></span>
+      {{end}}
+    </div>
+    {{end}}
   </div>
 
   {{ if .Params.tags }}

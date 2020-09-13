@@ -5,7 +5,7 @@ tags: ["Лирика"]
 categories: ["Барды", "Менестрели"]
 mainCategory: "Иваси"
 ---
-``` js
+```
                      Алексей Иващенко
 
 Dm | Dm7+ | Dm7 | Dm6 | Dm | Dm7+ | Dm7 | Dm6 | Dm | Dm7+ | Dm

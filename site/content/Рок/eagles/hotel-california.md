@@ -5,7 +5,7 @@ tags: ["Лирика"]
 categories: ["Рок"]
 mainCategory: "Eagles"
 ---
-``` js
+```
 Don Felder / Don Henley / Glenn Frey
  
 On a dark desert highway, cool wind in my hair

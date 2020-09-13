@@ -6,7 +6,7 @@ categories: ["Рок", "Кантри"]
 mainCategory: "Creedence Clearwater Revival"
 ---
 
-``` js
+```
 John Cameron Fogerty
 
 C

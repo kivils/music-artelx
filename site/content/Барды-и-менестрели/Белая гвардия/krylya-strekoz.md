@@ -7,7 +7,7 @@ mainCategory: "Белая гвардия"
 ---
 Зоя Ященко
 
-``` js
+```
 { Intro: D G D G }
 
 D                G

@@ -7,7 +7,7 @@ mainCategory: "Queen"
 youtube: "https://www.youtube.com/embed/sUJkCXE4sAA"
 ---
 
-``` js
+```
 Love of my life, you've hurt me
 You've broken my heart and now you leave me
 Love of my life, can't you see?

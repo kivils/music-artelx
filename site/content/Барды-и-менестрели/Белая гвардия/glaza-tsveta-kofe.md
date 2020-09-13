@@ -8,7 +8,7 @@ youtube: "https://www.youtube.com/embed/4neShB4gXHc"
 ---
 Зоя Ященко
 
-``` js
+```
     C          Am
 Когда я дочитаю этот роман,
      Dm         G

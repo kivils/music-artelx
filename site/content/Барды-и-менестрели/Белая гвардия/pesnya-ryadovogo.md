@@ -8,7 +8,7 @@ youtube: "https://www.youtube.com/embed/YupYwsv8fjk"
 ---
 Зоя Ященко
 
-``` js
+```
 [С каподастром на 2 ладу]
 
         Am

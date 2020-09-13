@@ -5,7 +5,7 @@ tags: ["Лирика", "Баллады"]
 categories: ["Барды, менестрели"]
 mainCategory: "Крыс и Шмендра"
 ---
-``` js
+```
 
 Hm             E-Em
 Banshee cried (a-a) all night long

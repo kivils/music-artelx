@@ -5,7 +5,7 @@ tags: ["Лирика"]
 categories: ["Барды, менестрели"]
 mainCategory: "Иваси"
 ---
-``` js
+```
                         А.Иващенко
 
          Em    Em7+ Em Em6   Am         H7      Em  Em7+
