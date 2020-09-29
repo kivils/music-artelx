@@ -9,8 +9,8 @@ List of my favorite songs with lyrics, chords, video.
 
 ## Requirements
 
-- NodeJS
-- yarn
+- [NodeJs](https://nodejs.org)
+- [Yarn](https://yarnpkg.com/)
 
 ## Development
 
